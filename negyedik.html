@@ -7,22 +7,19 @@
 </head>
 <body>
     <script>
-        function atalakit() {
-            const szovegInput = document.getElementById('szoveg');
-            const eredmenyDiv = document.getElementById('eredmeny');
-            const atalakitasRadio = document.querySelector('input[name="atalakit"]:checked');
-
-            const szoveg = szovegInput.value;
-
-            if (!szoveg || !atalakitasRadio) {
-                alert('Kérem, töltse ki a szövegmezőt, és válasszon átalakítási típust!');
-                return;
-            }
-
-            const atalakitottSzoveg = atalakitasRadio.value === 'kisbetus' ? szoveg.toLowerCase() : szoveg.toUpperCase();
-
-            eredmenyDiv.textContent = 'Eredmény: ' + atalakitottSzoveg;
+        let szoveg = prompt("Kérlek, adj meg egy szöveget!");
+        let choice = prompt("Válassz műveletet: 1 - kisbetű, 2 - nagybetű");
+    
+        if (choice === '1') {
+            let lowerCaseText = szoveg.toLowerCase();
+            document.write("Kisbetű: " + lowerCaseText);
+        } else if (choice === '2') {
+            let upperCaseText = szoveg.toUpperCase();
+            document.write("Nagybetű: " + upperCaseText);
+        } else {
+            document.write("Érvénytelen választás!");
         }
-    </script>
+      </script>
+    
 </body>
 </html>
