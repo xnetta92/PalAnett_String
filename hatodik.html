@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6. feladat</title>
+</head>
+
+<body>
+    <script>
+        let szoveg = prompt("Kérlek, adj meg egy legalább 30 karakterből álló szöveget!");
+        while (szoveg.length < 30) {
+            szoveg = prompt("A szöveg túl rövid! Kérlek, adj meg egy legalább 30 karakterből álló szöveget!");
+        }
+
+        let szo = prompt("Kérlek, adj meg egy szót!");
+
+        if (szoveg.includes(szo)) {
+            alert("Szerepel az adott szó a keresett szövegben!");
+        } else {
+            alert("Nem szerepel az adott szó a keresett szövegben.");
+        }
+    </script>
+
+</body>
+
+</html>
