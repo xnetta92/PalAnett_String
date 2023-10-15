@@ -6,23 +6,6 @@
     <title>4. feladat</title>
 </head>
 <body>
-    <h1>Szöveg Átalakító</h1>
-    <div>
-        <label for="szoveg">Írj be egy szöveget:</label>
-        <input type="text" id="szoveg"><br>
-    </div>
-    <div>
-        <p>Válaszd ki az átalakítás típusát:</p>
-        <input type="radio" id="kisbetus" name="atalakit" value="kisbetus">
-        <label for="kisbetus">Kisbetűs</label><br>
-        <input type="radio" id="nagybetus" name="atalakit" value="nagybetus">
-        <label for="nagybetus">Nagybetűs</label><br>
-    </div>
-    <br>
-    <button onclick="atalakit()">Átalakítás</button>
-
-    <p id="eredmeny"></p>
-
     <script>
         function atalakit() {
             const szovegInput = document.getElementById('szoveg');
